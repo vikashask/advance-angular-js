@@ -31,10 +31,10 @@ Angular 2 vs. Angular 1	Angular 4 vs. Angular 2	Angular 5 vs. Angular 4	Angular 
 Now Angular has its own template tag that is called “ng-template”.
 
 ### 6. NgIf with Else – Now in Angular 4, possible to use an else syntax as,
-
+```
 <div *ngIf="user.length > 0; else empty"><h2>Users</h2></div>
 <ng-template #empty><h2>No users.</h2></ng-template>
-
+```
 ### 7. AS keyword – A new addition to the template syntax is the “as keyword” is use to simplify to the “let” syntax.
 
 Use of as keyword,
