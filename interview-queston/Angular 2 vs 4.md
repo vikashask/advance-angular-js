@@ -93,11 +93,11 @@ export class UsersAppComponent {
 ### 12. Forms Validators - One new validator joins the existing “required”, “minLength”, “maxLength” and “pattern”. An email helps you validate that the input is a valid email.
 
 ### 13. Compare Select Options - A new “compareWith” directive has been added and it used to help you compare options from a select.
-
+```
 <select [compareWith]="byUId" [(ngModel)]="selectedUsers">
     <option *ngFor="let user of users" [ngValue]="user.UId">{{user.name}}</option>
 </select>
-
+```
 ### 14. Router - A new interface “paramMap” and “queryParamMap” has been added and it introduced to represent the parameters of a URL. 
 
 const uid = this.route.snapshot.paramMap.get('UId');
