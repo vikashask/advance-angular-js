@@ -1,12 +1,12 @@
-# INSTALLING ANGULAR CLI
+## INSTALLING ANGULAR CLI
 npm install -g @angular/cli
 
-# CREATE A NEW APPLICATION
+## CREATE A NEW APPLICATION
 ng new eventmanager --style=scss
 cd eventmanager
 ng serve
 
-# ADD BOOTSTRAP & BOOTSWATCH
+## ADD BOOTSTRAP & BOOTSWATCH
 npm install --save bootstrap
 npm install --save bootswatch
 
@@ -15,7 +15,7 @@ src/styles.scss
 @import "~bootstrap/scss/bootstrap.scss";
 @import "~bootswatch/dist/yeti/_bootswatch.scss";
 
-# ADDING FONT-AWESOME
+## ADDING FONT-AWESOME
 npm install --save font-awesome
 
 .angular-cli.json
@@ -31,8 +31,8 @@ npm install --save font-awesome
   }
 }
 
-# CREATE MAIN PAGE CONTENT
-# test bootstarp
+## CREATE MAIN PAGE CONTENT
+## test bootstarp
 /src/app/app.component.html
 <div class="container" style="margin-top: 10px;">
   <router-outlet></router-outlet>
