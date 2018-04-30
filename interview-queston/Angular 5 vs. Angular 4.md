@@ -78,30 +78,34 @@ These changes reduce around 60% size in most cases.
 . Now Angular has its own template tag that is called “ng-template”.
 
 ### 6. NgIf with Else – Now in Angular 4, possible to use an else syntax as,
-
+```
 <div *ngIf="user.length > 0; else empty"><h2>Users</h2></div>
 <ng-template #empty><h2>No users.</h2></ng-template>
-
+```
 ### 7. AS keyword – A new addition to the template syntax is the “as keyword” is use to simplify to the “let” syntax.
 
 Use of as keyword,
+```
 <div *ngFor="let user of users | slice:0:2 as total; index as = i">
     {{i+1}}/{{total.length}}: {{user.name}}
 </div>
-
+```
 To subscribe only once to a pipe “|” with “async” and If a user is an observable, you can now use to write,
+```
 <div *ngIf="users | async as usersModel">
     <h2>{{ usersModel.name }}</h2> <small>{{ usersModel.age }}</small>
 </div>
-
+```
 
 ### 8. Pipes - Angular 4 introduced a new “titlecase” pipe “|” and use to changes the first letter of each word into the uppercase. 
-
+```
 The example as,
 <h2>{{ 'anil singh' | titlecase }}</h2>
 <!-- OUPPUT - It will display 'Anil Singh' -->
-
+```
 ### 9. Http - Adding search parameters to an “HTTP request” has been simplified as,
+
+```
 //Angular 4 -
 http.get(`${baseUrl}/api/users`, { params: { sort: 'ascending' } });
 
@@ -109,8 +113,9 @@ http.get(`${baseUrl}/api/users`, { params: { sort: 'ascending' } });
 const params = new URLSearchParams();
 params.append('sort', 'ascending');
 http.get(`${baseUrl}/api/users`, { search: params });
-
+```
 ### 10. Test- Angular 4, overriding a template in a test has also been simplified as,
+```
 //Angular 4 -
 TestBed.overrideTemplate(UsersComponent, '<h2>{{users.name}}</h2>');
 
@@ -129,15 +134,17 @@ export class UsersAppComponent {
         meta.addTag({ name: 'Blogger', content: 'Anil Singh' });
     }
 }
-
+```
 ### 12. Forms Validators - One new validator joins the existing “required”, “minLength”, “maxLength” and “pattern”. An email helps you validate that the input is a valid email.
 
 ### 13. Compare Select Options - A new “compareWith” directive has been added and it used to help you compare options from a select.
+```
 <select [compareWith]="byUId" [(ngModel)]="selectedUsers">
     <option *ngFor="let user of users" [ngValue]="user.UId">{{user.name}}</option>
 </select>
-
+```
 ### 14. Router - A new interface “paramMap” and “queryParamMap” has been added and it introduced to represent the parameters of a URL. 
-
+```
 const uid = this.route.snapshot.paramMap.get('UId');
 this.userService.get(uid).subscribe(user => this.name = name);
+```
