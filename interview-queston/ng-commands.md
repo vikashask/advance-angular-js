@@ -20,5 +20,8 @@ ng g s mycomp
 
 # ng commands
   ng serve or ng s  // defalut port will be 4200
+  
   ng s -o // open in new tab after serving the angular project
+  
   ng s -o -port 3000 or ng s -o -p 3000
+  
