@@ -9,3 +9,6 @@
     For example, if the index.html is on the server at /app/index.html, set the base href to <base href="/app/"> like this.
     ng build --base-href=/app/
 
+## Build with --prod
+    ng build --prod
+
