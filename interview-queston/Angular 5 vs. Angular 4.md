@@ -68,23 +68,23 @@ additional Enhancement and Improvement.
 13. Enhancement in Router
 
 ### 1. Smaller & Faster Apps -
- Angular 4 applications is smaller & faster in comparison with Angular 2.
+    Angular 4 applications is smaller & faster in comparison with Angular 2.
 
 ### 2. View Engine Size Reduce - 
-Some changes under to hood to what AOT generated code compilation that means in Angular 4, improved the compilation time. 
-These changes reduce around 60% size in most cases. 
+    Some changes under to hood to what AOT generated code compilation that means in Angular 4, improved the compilation time. 
+    These changes reduce around 60% size in most cases. 
 
 ### 3. Animation Package- 
-Animations now have their own package i.e. @angular/platform-browser/animations
+    Animations now have their own package i.e. @angular/platform-browser/animations
 
 ### 4. Improvement - Some Improvement on *ngIf and *ngFor.
 
 ### 5. Template - The template is now ng-template. 
-You should use the “ng-template” tag instead of “template”
-. Now Angular has its own template tag that is called “ng-template”.
+    You should use the “ng-template” tag instead of “template”
+    . Now Angular has its own template tag that is called “ng-template”.
 
 ### 6. NgIf with Else – 
-Now in Angular 4, possible to use an else syntax as,
+    Now in Angular 4, possible to use an else syntax as,
 ```
 <div *ngIf="user.length > 0; else empty">
     <h2>Users</h2>
@@ -95,14 +95,13 @@ Now in Angular 4, possible to use an else syntax as,
 </ng-template>
 ```
 ### 7. AS keyword – 
-A new addition to the template syntax is the “as keyword” is use to simplify to the “let” syntax.
+    A new addition to the template syntax is the “as keyword” is use to simplify to the “let” syntax.
 
-Use of as keyword,
-```
-<div *ngFor="let user of users | slice:0:2 as total; index as = i">
-    {{i+1}}/{{total.length}}: {{user.name}}
-</div>
-```
+    Use of as keyword,
+    <div *ngFor="let user of users | slice:0:2 as total; index as = i">
+        {{i+1}}/{{total.length}}: {{user.name}}
+    </div>
+
 To subscribe only once to a pipe “|” with “async” and If a user is an observable, you can now use to write,
 ```
 <div *ngIf="users | async as usersModel">
