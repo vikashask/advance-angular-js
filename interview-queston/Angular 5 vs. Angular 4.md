@@ -14,40 +14,42 @@ Improvements on Lazy loading for AngularLazy loading
     Hybrid Upgrade Application
 
 ### Performance Improvements
-Use of addEventListener for the faster rendering and it is the core functionality.
-Update to new version of build-optimizer.
-Added some Improvements on the abstract class methods and interfaces
-Switch Angular to use Static-Injector instead of Reflective-Injector.
-Improve the applications testing.
-Improve the performance of hybrid applications
-Improvements on Lazy loading for Angular
+    Use of addEventListener for the faster rendering and it is the core functionality.
+    Update to new version of build-optimizer.
+    Added some Improvements on the abstract class methods and interfaces
+    Switch Angular to use Static-Injector instead of Reflective-Injector.
+    Improve the applications testing.
+    Improve the performance of hybrid applications
+    Improvements on Lazy loading for Angular
 
-### Some Improvement on HttpClient – This is used for Applications communicate with backend services over the HTTP protocol!
-Improvement on Type-checking the response
-Improvement on Reading the full response
-Improvement on Error handling and fetching error details
-Improvement on Intercepting all requests or responses
-Improvement on Logging
-Improvement on Caching
-Improvement on XSRF Protection
+### Some Improvement on HttpClient – 
+This is used for Applications communicate with backend services over the HTTP protocol!
+    Improvement on Type-checking the response
+    Improvement on Reading the full response
+    Improvement on Error handling and fetching error details
+    Improvement on Intercepting all requests or responses
+    Improvement on Logging
+    Improvement on Caching
+    Improvement on XSRF Protection
 
 ### Router Life Cycle Events – Angular 5
+
 ### Added new router life cycle events for Guards and Resolvers -
-GuardsCheckStart,
-GuardsCheckEnd,
-ResolveStart and
-ResolveEnd
+    GuardsCheckStart,
+    GuardsCheckEnd,
+    ResolveStart and
+    ResolveEnd
 
 ### Angular 5 Bug Fixes - Angular 5
-Fixed compilation error by using the correct type for providers
-Skip PWA test when redeploying non-public commit
-Don't strip CSS source maps. This is the compiler related fix
-Remove tsickle (language-service) dependency
-Support persisting dynamic styles within animation states
-Ignore @import in multi-line css
-Fix platform-browser-dynamic
-Forbid destroyed views to be inserted or moved in VC
-Support persisting dynamic styles within animation states
+    Fixed compilation error by using the correct type for providers
+    Skip PWA test when redeploying non-public commit
+    Don't strip CSS source maps. This is the compiler related fix
+    Remove tsickle (language-service) dependency
+    Support persisting dynamic styles within animation states
+    Ignore @import in multi-line css
+    Fix platform-browser-dynamic
+    Forbid destroyed views to be inserted or moved in VC
+    Support persisting dynamic styles within animation states
 
 ### ---------  What’s New in Angular 4? AND what are the Improvements in Angular 4? -------------
 additional Enhancement and Improvement.
@@ -65,24 +67,35 @@ additional Enhancement and Improvement.
 12. Added some Forms Validators Attributes
 13. Enhancement in Router
 
-### 1. Smaller & Faster Apps - Angular 4 applications is smaller & faster in comparison with Angular 2.
+### 1. Smaller & Faster Apps -
+ Angular 4 applications is smaller & faster in comparison with Angular 2.
 
-### 2. View Engine Size Reduce - Some changes under to hood to what AOT generated code compilation that means in Angular 4, improved the compilation time. 
+### 2. View Engine Size Reduce - 
+Some changes under to hood to what AOT generated code compilation that means in Angular 4, improved the compilation time. 
 These changes reduce around 60% size in most cases. 
 
-### 3. Animation Package- Animations now have their own package i.e. @angular/platform-browser/animations
+### 3. Animation Package- 
+Animations now have their own package i.e. @angular/platform-browser/animations
 
 ### 4. Improvement - Some Improvement on *ngIf and *ngFor.
 
-### 5. Template - The template is now ng-template. You should use the “ng-template” tag instead of “template”
+### 5. Template - The template is now ng-template. 
+You should use the “ng-template” tag instead of “template”
 . Now Angular has its own template tag that is called “ng-template”.
 
-### 6. NgIf with Else – Now in Angular 4, possible to use an else syntax as,
+### 6. NgIf with Else – 
+Now in Angular 4, possible to use an else syntax as,
 ```
-<div *ngIf="user.length > 0; else empty"><h2>Users</h2></div>
-<ng-template #empty><h2>No users.</h2></ng-template>
+<div *ngIf="user.length > 0; else empty">
+    <h2>Users</h2>
+</div>
+
+<ng-template #empty>
+    <h2>No users.</h2>
+</ng-template>
 ```
-### 7. AS keyword – A new addition to the template syntax is the “as keyword” is use to simplify to the “let” syntax.
+### 7. AS keyword – 
+A new addition to the template syntax is the “as keyword” is use to simplify to the “let” syntax.
 
 Use of as keyword,
 ```
@@ -97,13 +110,15 @@ To subscribe only once to a pipe “|” with “async” and If a user is an ob
 </div>
 ```
 
-### 8. Pipes - Angular 4 introduced a new “titlecase” pipe “|” and use to changes the first letter of each word into the uppercase. 
+### 8. Pipes - 
+Angular 4 introduced a new “titlecase” pipe “|” and use to changes the first letter of each word into the uppercase. 
 ```
 The example as,
 <h2>{{ 'anil singh' | titlecase }}</h2>
 <!-- OUPPUT - It will display 'Anil Singh' -->
 ```
-### 9. Http - Adding search parameters to an “HTTP request” has been simplified as,
+### 9. Http - 
+Adding search parameters to an “HTTP request” has been simplified as,
 
 ```
 //Angular 4 -
@@ -123,8 +138,10 @@ TestBed.overrideTemplate(UsersComponent, '<h2>{{users.name}}</h2>');
 TestBed.overrideComponent(UsersComponent, {
     set: { template: '<h2>{{users.name}}</h2>' }
 });
-
+```
 ### 11. Service- A new service has been introduced to easily get or update “Meta Tags” i.e.
+
+```
 @Component({
     selector: 'users-app',
     template: `<h1>Users</h1>`
@@ -135,15 +152,18 @@ export class UsersAppComponent {
     }
 }
 ```
-### 12. Forms Validators - One new validator joins the existing “required”, “minLength”, “maxLength” and “pattern”. An email helps you validate that the input is a valid email.
+### 12. Forms Validators - 
+One new validator joins the existing “required”, “minLength”, “maxLength” and “pattern”. An email helps you validate that the input is a valid email.
 
-### 13. Compare Select Options - A new “compareWith” directive has been added and it used to help you compare options from a select.
+### 13. Compare Select Options - 
+A new “compareWith” directive has been added and it used to help you compare options from a select.
 ```
 <select [compareWith]="byUId" [(ngModel)]="selectedUsers">
     <option *ngFor="let user of users" [ngValue]="user.UId">{{user.name}}</option>
 </select>
 ```
-### 14. Router - A new interface “paramMap” and “queryParamMap” has been added and it introduced to represent the parameters of a URL. 
+### 14. Router - 
+A new interface “paramMap” and “queryParamMap” has been added and it introduced to represent the parameters of a URL. 
 ```
 const uid = this.route.snapshot.paramMap.get('UId');
 this.userService.get(uid).subscribe(user => this.name = name);
