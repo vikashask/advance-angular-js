@@ -3,51 +3,51 @@
 Improvements on Lazy loading for AngularLazy loading
 
 ### Contains bunch of new features, performance improvements and lot of bug fixes
-·       Make AOT the default
-·       Watch mode
-·       Type checking in templates
-·       More flexible metadata
-·       Remove *.ngfactory.ts files
-·       Better error messages
-·       Smooth upgrades
-·       Tree-Shakeable components
-·       Hybrid Upgrade Application
+    Make AOT the default
+    Watch mode
+    Type checking in templates
+    More flexible metadata
+    Remove *.ngfactory.ts files
+    Better error messages
+    Smooth upgrades
+    Tree-Shakeable components
+    Hybrid Upgrade Application
 
 ### Performance Improvements
-·       Use of addEventListener for the faster rendering and it is the core functionality.
-·       Update to new version of build-optimizer.
-·       Added some Improvements on the abstract class methods and interfaces
-·       Switch Angular to use Static-Injector instead of Reflective-Injector.
-·       Improve the applications testing.
-·       Improve the performance of hybrid applications
-·       Improvements on Lazy loading for Angular
+Use of addEventListener for the faster rendering and it is the core functionality.
+Update to new version of build-optimizer.
+Added some Improvements on the abstract class methods and interfaces
+Switch Angular to use Static-Injector instead of Reflective-Injector.
+Improve the applications testing.
+Improve the performance of hybrid applications
+Improvements on Lazy loading for Angular
 
 ### Some Improvement on HttpClient – This is used for Applications communicate with backend services over the HTTP protocol!
-·       Improvement on Type-checking the response
-·       Improvement on Reading the full response
-·       Improvement on Error handling and fetching error details
-·       Improvement on Intercepting all requests or responses
-·       Improvement on Logging
-·       Improvement on Caching
-·       Improvement on XSRF Protection
+Improvement on Type-checking the response
+Improvement on Reading the full response
+Improvement on Error handling and fetching error details
+Improvement on Intercepting all requests or responses
+Improvement on Logging
+Improvement on Caching
+Improvement on XSRF Protection
 
 ### Router Life Cycle Events – Angular 5
 ### Added new router life cycle events for Guards and Resolvers -
-·       GuardsCheckStart,
-·       GuardsCheckEnd,
-·       ResolveStart and
-·       ResolveEnd
+GuardsCheckStart,
+GuardsCheckEnd,
+ResolveStart and
+ResolveEnd
 
 ### Angular 5 Bug Fixes - Angular 5
-·       Fixed compilation error by using the correct type for providers
-·       Skip PWA test when redeploying non-public commit
-·       Don't strip CSS source maps. This is the compiler related fix
-·       Remove tsickle (language-service) dependency
-·       Support persisting dynamic styles within animation states
-·       Ignore @import in multi-line css
-·       Fix platform-browser-dynamic
-·       Forbid destroyed views to be inserted or moved in VC
-·       Support persisting dynamic styles within animation states
+Fixed compilation error by using the correct type for providers
+Skip PWA test when redeploying non-public commit
+Don't strip CSS source maps. This is the compiler related fix
+Remove tsickle (language-service) dependency
+Support persisting dynamic styles within animation states
+Ignore @import in multi-line css
+Fix platform-browser-dynamic
+Forbid destroyed views to be inserted or moved in VC
+Support persisting dynamic styles within animation states
 
 ### ---------  What’s New in Angular 4? AND what are the Improvements in Angular 4? -------------
 additional Enhancement and Improvement.
