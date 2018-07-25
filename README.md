@@ -4,7 +4,7 @@ Angular js Tutorial and interview Question
 
 [interview-question](interview-queston/interview-question.md)
 
-[Angular 2 vs 4](interview-queston/Angular 2 vs 4.md)
+[Angular 2 vs 4](interview-queston/Angular-2-vs-4.md)
 
 [Angular 2 vs. Angular 1](interview-queston)
 
