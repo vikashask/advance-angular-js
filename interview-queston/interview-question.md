@@ -15,26 +15,22 @@ Answer :
 
 Answer :
 
-    Angular 2 is not just a typical upgrade but a totally new development. The whole framework is rewritten from the ground. Angular 2 got rid of many things like $scope, controllers, DDO, jqLite, angular.module etc.
+    Angular 2 is totally new development. The whole framework is rewritten from the ground.
 
-    It uses components for almost everything. Imagine that even the whole app is now a component. Also it takes advantage of ES6 / TypeScript syntax. Developing Angular 2 apps in TypeScript has made it even more powerful.
-
-    Apart from that, many things have evolved and re-designed like the template engine and many more.
+    It uses components for everything. Imagine that even the whole app is now a component. Also it takes advantage of ES6 / TypeScript / Rxjs.
 
 3.What Is Typescript ?
 
 Answer :
 
-    TypeScript is a typed super set of JavaScript which has been built and maintained by Microsoft and chosen by the AngularJS
-    team for development.
+    TypeScript is a typed super set of JavaScript
 
 4.What Is The Need For Typescript In Angular2?
 
     Answer :
 
     Understanding the need for TypeScript file in Angular2 applications :  JavaScript rules in Web development. 
-    Its the most popular language for developing web application UI. For may application developers having exposure in 
-    languages like Java and C#, creating the front end of a Web application in JavaScript is a very cumbersome process.
+    Its the most popular language for developing web application UI.creating the front end of a Web application in JavaScript is a very cumbersome process.
     For example if the user wants to create a class Employee in JavaScript. There is no class keyword in JavaScript so the code will be as follows-
 
     <html>
