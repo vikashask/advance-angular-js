@@ -71,7 +71,8 @@ additional Enhancement and Improvement.
     Angular 4 applications is smaller & faster in comparison with Angular 2.
 
 ### 2. View Engine Size Reduce - 
-    Some changes under to hood to what AOT generated code compilation that means in Angular 4, improved the compilation time. 
+    Some changes under to hood to what AOT generated code compilation that means in Angular 4, 
+    improved the compilation time. 
     These changes reduce around 60% size in most cases. 
 
 ### 3. Animation Package- 
