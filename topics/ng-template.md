@@ -5,7 +5,7 @@
         loginText = 'Login';
         signUpText = 'Sign Up'; 
         lessons = ['Lesson 1', 'Lessons 2'];
-
+    in html
       <ng-template [ngIf]="lessons" [ngIfElse]="loading">
        <div class="lesson" *ngFor="let lesson of lessons">
             <div class="lesson-detail">
