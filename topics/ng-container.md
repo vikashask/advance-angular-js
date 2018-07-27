@@ -20,4 +20,4 @@ in htmls
 ### Dynamic Template Creation with the ngTemplateOutlet directive
 the template itself and instantiate it anywhere on the page, using the ngTemplateOutlet directive:
 
-<ng-container *ngTemplateOutlet="loading"></ng-container>
+    <ng-container *ngTemplateOutlet="loading"></ng-container>
