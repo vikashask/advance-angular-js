@@ -2,6 +2,7 @@
 ### In order to avoid having to create that extra div, 
 we can use ng-container directive:
 
+```
 in ts file
     loginText = 'Login';
     signUpText = 'Sign Up'; 
@@ -15,7 +16,7 @@ in htmls
             </div>
         </div>
     </ng-container>
-
+```
 ### Dynamic Template Creation with the ngTemplateOutlet directive
 the template itself and instantiate it anywhere on the page, using the ngTemplateOutlet directive:
 
