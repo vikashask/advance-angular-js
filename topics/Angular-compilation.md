@@ -1,7 +1,7 @@
 ## Angular compilation
-An Angular application consists largely of components and their HTML templates. Before the browser can render the application, the components and templates must be converted to executable JavaScript by an Angular compiler.
+    An Angular application consists largely of components and their HTML templates. Before the browser can render the application, the components and templates must be converted to executable JavaScript by an Angular compiler.
 
-Angular offers two ways to compile your application:
+## Angular offers two ways to compile your application:
 
 ## 1.Just-in-Time (JIT) 
     which compiles your app in the browser at runtime

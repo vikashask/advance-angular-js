@@ -23,7 +23,7 @@ Improvements on Lazy loading for AngularLazy loading
     Improvements on Lazy loading for Angular
 
 ### Some Improvement on HttpClient – 
-This is used for Applications communicate with backend services over the HTTP protocol!
+    This is used for Applications communicate with backend services over the HTTP protocol!
     Improvement on Type-checking the response
     Improvement on Reading the full response
     Improvement on Error handling and fetching error details
