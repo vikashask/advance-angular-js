@@ -79,16 +79,16 @@ params.append('sort', 'ascending');
 http.get(`${baseUrl}/api/users`, { search: params });
 
 ### 10. Test- 
-Angular 4, overriding a template in a test has also been simplified as,
+    Angular 4, overriding a template in a test has also been simplified as,
 
-//Angular 4 -
-TestBed.overrideTemplate(UsersComponent, '<h2>{{users.name}}</h2>');
-```
-//Angular 2 -
-TestBed.overrideComponent(UsersComponent, {
-    set: { template: '<h2>{{users.name}}</h2>' }
-});
-```
+    //Angular 4 -
+    TestBed.overrideTemplate(UsersComponent, '<h2>{{users.name}}</h2>');
+
+    //Angular 2 -
+    TestBed.overrideComponent(UsersComponent, {
+        set: { template: '<h2>{{users.name}}</h2>' }
+    });
+
 ### 11. Service- 
 A new service has been introduced to easily get or update “Meta Tags” i.e.
 ```
