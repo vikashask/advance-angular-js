@@ -1,6 +1,6 @@
 ### The Angular 5 Improvements
 
-Improvements on Lazy loading for AngularLazy loading
+    Improvements on Lazy loading for AngularLazy loading
 
 ### Contains bunch of new features, performance improvements and lot of bug fixes
     Make AOT the default
@@ -52,20 +52,20 @@ Improvements on Lazy loading for AngularLazy loading
     Support persisting dynamic styles within animation states
 
 ### ---------  What’s New in Angular 4? AND what are the Improvements in Angular 4? -------------
-additional Enhancement and Improvement.
-1.    Smaller & Faster Apps
-2.    View Engine Size Reduce
-3.    Animation Package
-4.    NgIf and ngFor Improvement
-5.    Template
-6.    NgIf with Else
-7.    Use of AS keyword
-8.    Pipes
-9.    HTTP Request Simplified
-10. Apps Testing Simplified
-11. Introduce Meta Tags
-12. Added some Forms Validators Attributes
-13. Enhancement in Router
+    additional Enhancement and Improvement.
+    1.    Smaller & Faster Apps
+    2.    View Engine Size Reduce
+    3.    Animation Package
+    4.    NgIf and ngFor Improvement
+    5.    Template
+    6.    NgIf with Else
+    7.    Use of AS keyword
+    8.    Pipes
+    9.    HTTP Request Simplified
+    10. Apps Testing Simplified
+    11. Introduce Meta Tags
+    12. Added some Forms Validators Attributes
+    13. Enhancement in Router
 
 ### 1. Smaller & Faster Apps -
     Angular 4 applications is smaller & faster in comparison with Angular 2.
@@ -78,23 +78,23 @@ additional Enhancement and Improvement.
 ### 3. Animation Package- 
     Animations now have their own package i.e. @angular/platform-browser/animations
 
-### 4. Improvement - Some Improvement on *ngIf and *ngFor.
+### 4. Improvement - 
+    Some Improvement on *ngIf and *ngFor.
 
 ### 5. Template - The template is now ng-template. 
     You should use the “ng-template” tag instead of “template”
-    . Now Angular has its own template tag that is called “ng-template”.
+    Now Angular has its own template tag that is called “ng-template”.
 
 ### 6. NgIf with Else – 
     Now in Angular 4, possible to use an else syntax as,
-```
-<div *ngIf="user.length > 0; else empty">
-    <h2>Users</h2>
-</div>
+    <div *ngIf="user.length > 0; else empty">
+        <h2>Users</h2>
+    </div>
 
-<ng-template #empty>
-    <h2>No users.</h2>
-</ng-template>
-```
+    <ng-template #empty>
+        <h2>No users.</h2>
+    </ng-template>
+
 ### 7. AS keyword – 
     A new addition to the template syntax is the “as keyword” is use to simplify to the “let” syntax.
 
@@ -103,68 +103,61 @@ additional Enhancement and Improvement.
         {{i+1}}/{{total.length}}: {{user.name}}
     </div>
 
-To subscribe only once to a pipe “|” with “async” and If a user is an observable, you can now use to write,
-```
-<div *ngIf="users | async as usersModel">
-    <h2>{{ usersModel.name }}</h2> <small>{{ usersModel.age }}</small>
-</div>
-```
+    To subscribe only once to a pipe “|” with “async” and If a user is an observable, you can now use to write,
+    <div *ngIf="users | async as usersModel">
+        <h2>{{ usersModel.name }}</h2> <small>{{ usersModel.age }}</small>
+    </div>
 
 ### 8. Pipes - 
-Angular 4 introduced a new “titlecase” pipe “|” and use to changes the first letter of each word into the uppercase. 
-```
-The example as,
-<h2>{{ 'anil singh' | titlecase }}</h2>
-<!-- OUPPUT - It will display 'Anil Singh' -->
-```
+    Angular 4 introduced a new “titlecase” pipe “|” and use to changes the first letter of each word into the uppercase. 
+    The example as,
+    <h2>{{ 'anil singh' | titlecase }}</h2>
+    <!-- OUPPUT - It will display 'Anil Singh' -->
+
 ### 9. Http - 
-Adding search parameters to an “HTTP request” has been simplified as,
+    Adding search parameters to an “HTTP request” has been simplified as,
 
-```
-//Angular 4 -
-http.get(`${baseUrl}/api/users`, { params: { sort: 'ascending' } });
+    //Angular 4 -
+    http.get(`${baseUrl}/api/users`, { params: { sort: 'ascending' } });
 
-//Angular 2-
-const params = new URLSearchParams();
-params.append('sort', 'ascending');
-http.get(`${baseUrl}/api/users`, { search: params });
-```
+    //Angular 2-
+    const params = new URLSearchParams();
+    params.append('sort', 'ascending');
+    http.get(`${baseUrl}/api/users`, { search: params });
+
 ### 10. Test- Angular 4, overriding a template in a test has also been simplified as,
-```
-//Angular 4 -
-TestBed.overrideTemplate(UsersComponent, '<h2>{{users.name}}</h2>');
 
-//Angular 2 -
-TestBed.overrideComponent(UsersComponent, {
-    set: { template: '<h2>{{users.name}}</h2>' }
-});
-```
-### 11. Service- A new service has been introduced to easily get or update “Meta Tags” i.e.
+    //Angular 4 -
+    TestBed.overrideTemplate(UsersComponent, '<h2>{{users.name}}</h2>');
 
-```
-@Component({
-    selector: 'users-app',
-    template: `<h1>Users</h1>`
-})
-export class UsersAppComponent {
-    constructor(meta: Meta) {
-        meta.addTag({ name: 'Blogger', content: 'Anil Singh' });
+    //Angular 2 -
+    TestBed.overrideComponent(UsersComponent, {
+        set: { template: '<h2>{{users.name}}</h2>' }
+    });
+
+### 11. Service- 
+    A new service has been introduced to easily get or update “Meta Tags” i.e.
+
+    @Component({
+        selector: 'users-app',
+        template: `<h1>Users</h1>`
+    })
+    export class UsersAppComponent {
+        constructor(meta: Meta) {
+            meta.addTag({ name: 'Blogger', content: 'Anil Singh' });
+        }
     }
-}
-```
+
 ### 12. Forms Validators - 
-One new validator joins the existing “required”, “minLength”, “maxLength” and “pattern”. An email helps you validate that the input is a valid email.
+    One new validator joins the existing “required”, “minLength”, “maxLength” and “pattern”. An email helps you validate that the input is a valid email.
 
 ### 13. Compare Select Options - 
-A new “compareWith” directive has been added and it used to help you compare options from a select.
-```
-<select [compareWith]="byUId" [(ngModel)]="selectedUsers">
-    <option *ngFor="let user of users" [ngValue]="user.UId">{{user.name}}</option>
-</select>
-```
+    A new “compareWith” directive has been added and it used to help you compare options from a select.
+    <select [compareWith]="byUId" [(ngModel)]="selectedUsers">
+        <option *ngFor="let user of users" [ngValue]="user.UId">{{user.name}}</option>
+    </select>
+
 ### 14. Router - 
-A new interface “paramMap” and “queryParamMap” has been added and it introduced to represent the parameters of a URL. 
-```
-const uid = this.route.snapshot.paramMap.get('UId');
-this.userService.get(uid).subscribe(user => this.name = name);
-```
+    A new interface “paramMap” and “queryParamMap” has been added and it introduced to represent the parameters of a URL. 
+    const uid = this.route.snapshot.paramMap.get('UId');
+    this.userService.get(uid).subscribe(user => this.name = name);
