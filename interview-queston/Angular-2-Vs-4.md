@@ -43,40 +43,34 @@ Now in Angular 4, possible to use an else syntax as,
 <ng-template #empty><h2>No users.</h2></ng-template>
 ```
 ### 7. AS keyword – 
+    A new addition to the template syntax is the “as keyword” is use to simplify to the “let” syntax.
+    Use of as keyword,
+    <div *ngFor="let user of users | slice:0:2 as total; index as = i">
+        {{i+1}}/{{total.length}}: {{user.name}}
+    </div>
 
-A new addition to the template syntax is the “as keyword” is use to simplify to the “let” syntax.
-```
-Use of as keyword,
-<div *ngFor="let user of users | slice:0:2 as total; index as = i">
-    {{i+1}}/{{total.length}}: {{user.name}}
-</div>
-```
-To subscribe only once to a pipe “|” with “async” and If a user is an observable, you can now use to write,
-```
-<div *ngIf="users | async as usersModel">
-    <h2>{{ usersModel.name }}</h2> <small>{{ usersModel.age }}</small>
-</div>
-```
+    To subscribe only once to a pipe “|” with “async” and If a user is an observable, you can now use to write,
+    <div *ngIf="users | async as usersModel">
+        <h2>{{ usersModel.name }}</h2> <small>{{ usersModel.age }}</small>
+    </div>
 
 ### 8. Pipes - 
-Angular 4 introduced a new “titlecase” pipe “|” and use to changes the first letter of each word into the uppercase. 
+    Angular 4 introduced a new “titlecase” pipe “|” and use to changes the first letter of each word into the uppercase. 
 
-The example as,
-```
-<h2>{{ 'anil singh' | titlecase }}</h2>
-```
-<!-- OUPPUT - It will display 'Anil Singh' -->
+    The example as,
+    <h2>{{ 'anil singh' | titlecase }}</h2>
+    <!-- OUPPUT - It will display 'Anil Singh' -->
 
 ### 9. Http - 
-Adding search parameters to an “HTTP request” has been simplified as,
+    Adding search parameters to an “HTTP request” has been simplified as,
 
-//Angular 4 -
-http.get(`${baseUrl}/api/users`, { params: { sort: 'ascending' } });
+    //Angular 4 -
+    http.get(`${baseUrl}/api/users`, { params: { sort: 'ascending' } });
 
-//Angular 2-
-const params = new URLSearchParams();
-params.append('sort', 'ascending');
-http.get(`${baseUrl}/api/users`, { search: params });
+    //Angular 2-
+    const params = new URLSearchParams();
+    params.append('sort', 'ascending');
+    http.get(`${baseUrl}/api/users`, { search: params });
 
 ### 10. Test- 
     Angular 4, overriding a template in a test has also been simplified as,
