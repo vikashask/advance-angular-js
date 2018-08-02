@@ -1,0 +1,2 @@
+## Angular compilation
+An Angular application consists largely of components and their HTML templates. Before the browser can render the application, the components and templates must be converted to executable JavaScript by an Angular compiler.
