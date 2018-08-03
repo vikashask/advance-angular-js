@@ -16,16 +16,17 @@
 ## 2.Ahead-of-Time (AOT)
     which compiles your app at build time.
     For AOT compilation, append the --aot flags to the build-only or the build-and-serve-locally CLI commands:
-`ng build --aot`
-`ng serve --aot`
+>ng build --aot
+
+>ng serve --aot
 
 ## Why compile with AOT
-    Faster rendering
-    Fewer asynchronous requests
-    Smaller Angular framework download size
-    Detect template errors earlier
-    Better security : AOT compiles HTML templates and components into JavaScript files long before 
-    they are served to the client. 
+>Faster rendering
+>    Fewer asynchronous requests
+>    Smaller Angular framework download size
+>    Detect template errors earlier
+>    Better security : AOT compiles HTML templates and components into JavaScript files long before 
+>    they are served to the client. 
 
 
 

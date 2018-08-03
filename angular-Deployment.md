@@ -10,5 +10,5 @@
     ng build --base-href=/app/
 
 ## Build with --prod
-    ng build --prod
+> ng build --prod
 
