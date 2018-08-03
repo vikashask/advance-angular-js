@@ -8,9 +8,9 @@
 ### minified version of the libs I use e.g. bootstrap etc.
 
 ###  angular seed
-    angular seed provide following feature
+angular seed provide following feature
 
-    - [x] Production and development builds.
+- [x] Production and development builds.
 
 - [x] Ahead-of-Time compilation support.
 
