@@ -10,7 +10,7 @@
 ###  angular seed
     angular seed provide following feature
 
-- [x] Production and development builds.
+    - [x] Production and development builds.
 
 - [x] Ahead-of-Time compilation support.
 
