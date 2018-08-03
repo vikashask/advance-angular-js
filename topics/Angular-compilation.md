@@ -10,13 +10,14 @@
 
     JIT compilation is the default when you run the build-only or the build-and-serve-locally CLI commands:
 > ng build
+
 > ng serve
 
 ## 2.Ahead-of-Time (AOT)
     which compiles your app at build time.
     For AOT compilation, append the --aot flags to the build-only or the build-and-serve-locally CLI commands:
-    ng build --aot
-    ng serve --aot
+`ng build --aot`
+`ng serve --aot`
 
 ## Why compile with AOT
     Faster rendering
