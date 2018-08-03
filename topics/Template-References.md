@@ -21,6 +21,6 @@
 
     }
 
--DOM element or component, by providing the template reference name defaultTabButtons to the ViewChild decorator.
+>DOM element or component, by providing the template reference name defaultTabButtons to the ViewChild decorator.
 
 

@@ -10,9 +10,10 @@
 ###  angular seed
     angular seed provide following feature
 
-    Production and development builds.
+    [x] Production and development builds.
     Ahead-of-Time compilation support.
-    Uses codelyzer for static code analysis, which verifies that the project follows practices from the Angular style guide.
+    Uses codelyzer for static code analysis, which verifies that the project follows practices from 
+    the Angular style guide.
     Tree-Shaking production builds with Rollup.
     Sample unit tests with Jasmine and Karma including code coverage via istanbul.
     End-to-end tests with Cypress.
