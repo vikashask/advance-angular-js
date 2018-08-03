@@ -22,11 +22,16 @@
 
 ## Why compile with AOT
 >Faster rendering
->    Fewer asynchronous requests
->    Smaller Angular framework download size
->    Detect template errors earlier
->    Better security : AOT compiles HTML templates and components into JavaScript files long before 
->    they are served to the client. 
+
+>Fewer asynchronous requests
+
+>Smaller Angular framework download size
+
+>Detect template errors earlier
+
+>Better security : AOT compiles HTML templates and components into JavaScript files long before 
+
+>they are served to the client. 
 
 
 
