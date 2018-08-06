@@ -1,3 +1,5 @@
+## Optimize The Angular 2 Application For Better Performance?
+
 ### compressed images.
 ### minify css
 ### minify js.
@@ -31,3 +33,12 @@ angular seed provide following feature
 - [ ] Allows you to analyze the space usage of created bundles by using source-map-explorer
     Ready to go, statically typed build system using gulp for working with TypeScript.
 
+##        OR
+
+    I would consider the following points while optimizing the angular 2 app:
+            Consider AOT compilation.
+            Application is bundled, uglified, and tree shaking should be done.
+            Application doesn’t have un-necessary import statements.
+            Any 3rd party library, which is not used, is removed from the application.
+            Have all dependencies and dev-dependencies are clearly separated.
+            Consider lazy loading instead of fully bundled app if the app size is more.
