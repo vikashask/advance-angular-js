@@ -1,7 +1,5 @@
 ## INSTALLING ANGULAR CLI
-```
-npm install -g @angular/cli
-```
+  npm install -g @angular/cli
 ## CREATE A NEW APPLICATION
 
 ```
