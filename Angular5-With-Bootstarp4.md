@@ -35,10 +35,9 @@ import bootwatch and bootstarp
       }
     }
 ## CREATE MAIN PAGE CONTENT
-## test bootstarp
-```
-/src/app/app.component.html
-<div class="container" style="margin-top: 10px;">
-  <router-outlet></router-outlet>
-</div>
-```
+test bootstarp
+
+    /src/app/app.component.html
+    <div class="container" style="margin-top: 10px;">
+      <router-outlet></router-outlet>
+    </div>
